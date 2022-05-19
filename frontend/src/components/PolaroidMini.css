@@ -1,0 +1,49 @@
+.polaroid-mini{
+  font-size:20px;
+  text-align:center;
+  display:inline-block;
+  list-style:none;
+  position:relative;
+  border:solid 0.75rem #fff;
+  background:#fff;
+  box-shadow:0 0 15px 0px #555;
+  transition:all 1s ease;
+  -o-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -webkit-transition:all 1s ease;
+  top:50px;
+}
+
+.polaroid-mini:nth-child(1n){
+    transform:rotate(10deg);
+}
+
+.polaroid-mini:nth-child(2n){
+    transform:rotate(-10deg);
+}
+
+.polaroid-mini:nth-child(3n){
+    transform:rotate(5deg);
+}
+
+.polaroid-mini:nth-child(4n){
+    transform:rotate(-10deg);
+}
+
+.polaroid-mini:hover{
+  transform:rotate(0deg);
+}
+
+.polaroid-mini img{
+  width: 15rem;
+}
+@media screen and (max-width: 540px) {
+  
+.polaroid-mini img{
+  width: 10rem;
+}
+}
+
+.polaroid-mini p{
+  margin:0;
+}

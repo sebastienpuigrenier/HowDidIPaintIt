@@ -1,0 +1,29 @@
+.polaroid-maxi{
+  font-size:20px;
+  text-align:center;
+  display:inline-block;
+  list-style:none;
+  border:solid 0.75rem #fff;
+  background:#fff;
+  box-shadow:0 0 15px 0px #555;
+  transition:all 1s ease;
+  -o-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -webkit-transition:all 1s ease;
+  top:50px;
+}
+
+.polaroid-maxi img{
+  width: 40vw;
+}
+@media screen and (max-width: 540px) {
+  
+.polaroid-maxi img{
+  width: 80vw;
+}
+}
+
+
+.polaroid-mini p{
+  margin:0;
+}
