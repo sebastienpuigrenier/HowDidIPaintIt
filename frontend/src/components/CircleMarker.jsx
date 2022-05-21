@@ -4,7 +4,7 @@ function CircleMarker() {
   return (
     <img
       className="red-circle-01"
-      src="../src/assets/red_circle.png"
+      src="../img/red_circle.png"
       alt="red circle marker"
     />
   );

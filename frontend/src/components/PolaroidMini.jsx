@@ -5,7 +5,7 @@ import "./PolaroidMini.css";
 function PolaroidMini({ data }) {
   const tempObject = data;
   const link =
-    data.image[0] === "../src/assets/bloodbowl_player-min.png"
+    data.image[0] === "../img/bloodbowl_player-min.png"
       ? "/figurinedetailsexample"
       : "/figurinedetails";
 

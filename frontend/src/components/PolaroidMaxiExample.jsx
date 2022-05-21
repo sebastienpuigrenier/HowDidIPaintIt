@@ -6,7 +6,7 @@ import "./PolaroidMaxi.css";
 function PolaroidMaxi() {
   const tempObject = {
     pseudo: "Kirdom",
-    image: ["../src/assets/bloodbowl_player-min.png"],
+    image: ["../img/bloodbowl_player-min.png"],
     figurine: "BloodBowl Player",
   };
 
