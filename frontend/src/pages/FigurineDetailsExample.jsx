@@ -1,12 +1,12 @@
 import React from "react";
 
-import PolaroidMaxi from "../components/PolaroidMaxi";
+import PolaroidMaxiExample from "../components/PolaroidMaxiExample";
 import StickyNote from "../components/StickyNote";
 
 function FigurineDetails() {
   return (
     <div className="figurine-details-container">
-      <PolaroidMaxi />
+      <PolaroidMaxiExample />
       <div className="figurine-details-stikynote-list">
         <StickyNote data={["Sous-couche", "Abaddon Black"]} />
         <StickyNote data={["Base", "Ionrach Skin"]} />

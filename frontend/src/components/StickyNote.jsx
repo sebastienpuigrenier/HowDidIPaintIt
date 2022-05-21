@@ -1,14 +1,32 @@
 import React from "react";
+import "./StickyNote.css";
 
-function StickyNote() {
+function StickyNote({ data }) {
+  let color = "yellow";
+  switch (data[0]) {
+    case "Sous-couche":
+      color = "blue";
+      break;
+    case "Base":
+      color = "yellow";
+      break;
+    case "Ombrage":
+      color = "green";
+      break;
+    case "Layer":
+      color = "violet";
+      break;
+
+    default:
+      color = "yellow";
+  }
+
   return (
-    <div className="post-it">
-      <h1>Sticky note</h1>
-      <ul>
-        <li>You can add elements (contenteditable)</li>
-        <li>You can cross out an element by clicking it</li>
-        <li>Thanks to JavaScript</li>
-      </ul>
+    <div className={`sticky-note ${color}`}>
+      <details>
+        <summary>{data[0]}</summary>
+        <p>Ø {data[1]}</p>
+      </details>
     </div>
   );
 }

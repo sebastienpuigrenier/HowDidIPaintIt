@@ -1,11 +1,12 @@
 import React from "react";
+import CircleMarker from "./CircleMarker";
 
 import "./PolaroidMaxi.css";
 
 function PolaroidMaxi() {
   const tempObject = {
     pseudo: "Kirdom",
-    image: ["https://unsplash.it/300/300"],
+    image: ["../src/assets/bloodbowl_player-min.png"],
     figurine: "BloodBowl Player",
   };
 
@@ -17,6 +18,7 @@ function PolaroidMaxi() {
       />
       <p>{tempObject.pseudo}</p>
       <p>{tempObject.pseudo}</p>
+      <CircleMarker />
     </div>
   );
 }

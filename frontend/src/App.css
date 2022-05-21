@@ -286,4 +286,11 @@ body {
 .figurine-details-container{
 	text-align: start;
 	padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.figurine-details-stikynote-list{
+  margin: 0 auto;
 }

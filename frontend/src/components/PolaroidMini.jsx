@@ -2,25 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./PolaroidMini.css";
 
-function PolaroidMini() {
-  const tempObject = {
-    pseudo: "Kirdom",
-    image: [
-      "https://unsplash.it/200/200",
-      "https://unsplash.it/300/300",
-      "https://unsplash.it/400/400",
-      "https://unsplash.it/500/500",
-      "https://unsplash.it/600/600",
-    ],
-    figurine: "BloodBowl Player",
-  };
-  const random = Math.round(Math.random() * 3 + 1);
+function PolaroidMini({ data }) {
+  const tempObject = data;
+  const link =
+    data.image[0] === "../src/assets/bloodbowl_player-min.png"
+      ? "/figurinedetailsexample"
+      : "/figurinedetails";
 
   return (
     <div className="polaroid-mini">
-      <Link to="/figurinedetails">
+      <Link to={link}>
         <img
-          src={tempObject.image[random]}
+          src={tempObject.image[0]}
           alt={`${tempObject.figurine} peint par ${tempObject.pseudo}`}
         />
       </Link>

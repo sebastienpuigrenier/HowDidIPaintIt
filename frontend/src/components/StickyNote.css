@@ -1,0 +1,67 @@
+:root {
+  --color-sticky-unbleached-silk: #FFDFCC;
+  --color-sticky-cornslik : #FFFADB;
+  --color-sticky-tea-green: #CBEBC3;
+  --color-sticky-powder-blue: #ADD7DB;
+  --color-sticky-blue-bell: #989AC6;
+}
+
+.sticky-note {
+ width: 20rem;
+ position:relative;
+ overflow:hidden;
+ margin:0 auto 2rem;
+ padding:1.25rem;
+ border-radius:0 0 0 1.9rem/2.8rem;
+ box-shadow:
+   inset 0 -2.5rem 2.5rem rgba(0,0,0,0.2),
+   inset 0 1.5rem 0.6rem rgba(0,0,0,0.2),
+   0 0.3rem 0.4rem 0.3rem rgba(0,0,0,0.2);
+ line-height:1.7em;
+ font-size:1.25rem;
+
+ color:#130d6b;
+}
+
+.sticky-note:before {
+  content:"";
+ display:block;
+ position:absolute;
+ width:1.25rem;
+ height:25px;
+ box-shadow:
+   0.2rem -0.125rem 0.6rem rgba(0,0,0,0.2),
+   inset 0.9rem -0.9rem 0.9rem rgba(0,0,0,0.3);
+ left:0;
+ bottom:0;
+ z-index:2;
+ transform:skewX(25deg);
+}
+
+.sticky-note summary{
+  cursor:pointer; 
+}
+
+.sticky-note details summary > * {
+  display: inline;
+}
+
+.yellow {
+ background:var(--color-sticky-cornslik);
+}
+
+.orange {
+  background: var(--color-sticky-unbleached-silk)
+}
+
+.green {
+  background: var(--color-sticky-tea-green)
+}
+
+.blue {
+  background: var(--color-sticky-powder-blue)
+}
+
+.violet {
+  background: var(--color-sticky-blue-bell)
+}

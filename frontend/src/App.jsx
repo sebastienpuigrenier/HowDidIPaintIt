@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Page404 from "./pages/Page404";
 import FigurineDetails from "./pages/FigurineDetails";
+import FigurineDetailsExample from "./pages/FigurineDetailsExample";
 
 import "./App.css";
 
@@ -37,6 +38,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home isScrolled={isScrolled} />} />
           <Route path="/figurinedetails" element={<FigurineDetails />} />
+          <Route
+            path="/figurinedetailsexample"
+            element={<FigurineDetailsExample />}
+          />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </div>
